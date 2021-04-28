@@ -10,7 +10,9 @@ RUN apt ${APT_OPTS} update && \
     apt ${APT_OPTS} --no-install-recommends install apt-utils && \
     apt ${APT_OPTS} --no-install-recommends install \
       python3 \
-      python3-pip
+      python3-pip wget
+
+RUN wget https://github.com/bedapudi6788/NudeNet/releases/download/v0/classifier_model
 
 FROM builder-deps AS builder
 COPY requirements.txt .
