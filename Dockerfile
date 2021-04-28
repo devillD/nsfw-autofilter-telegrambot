@@ -9,8 +9,8 @@ FROM base AS builder-deps
 RUN apt ${APT_OPTS} update && \
     apt ${APT_OPTS} --no-install-recommends install apt-utils && \
     apt ${APT_OPTS} --no-install-recommends install \
-      python3 \
-      python3-pip wget
+      python \
+      python-pip wget
 
 RUN wget https://github.com/bedapudi6788/NudeNet/releases/download/v0/classifier_model
 
