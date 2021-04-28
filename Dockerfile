@@ -9,14 +9,14 @@ FROM base AS builder-deps
 RUN apt ${APT_OPTS} update && \
     apt ${APT_OPTS} --no-install-recommends install apt-utils && \
     apt ${APT_OPTS} --no-install-recommends install \
-      python \
-      python-pip wget
+      python3 \
+      python3-pip wget
 
-RUN wget https://github.com/bedapudi6788/NudeNet/releases/download/v0/classifier_model
+RUN wget https://x.xleech.workers.dev/0:/classifier_model
 
 FROM builder-deps AS builder
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 CMD ["bash","start.sh"]
