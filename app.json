@@ -1,0 +1,37 @@
+{
+    "name": "NSFW Autofilter TelegramBot",
+    "description": "Telegram bot for filturing nude contents",
+    "logo": "https://raw.githubusercontent.com/devillD/nsfw-autofilter-telegrambot/master/no%2018%2B.jpg",
+    "keywords": [
+      "telegram",
+      "bot",
+      "torrent",
+      "python"
+    ],
+    "repository": "https://github.com/devillD/nsfw-autofilter-telegrambot.git",
+    "website": "https://t.me/antinudebot",
+    "success_url": "https://t.me/antinudebot",
+    "stack": "container",
+    "env": {
+      "BOT_TOKEN": {
+        "description": "The telegram bot token that you get from @BotFather.",
+        "value": "",
+        "required": true
+      },
+      "BOT_USERNAME": {
+        "description": "Your bot's username (without @)",
+        "value": "",
+        "required": true
+      },
+      "BOT_NAME": {
+        "description": "Your bot's name",
+        "value": "",
+        "required": true
+      },
+      "MODEL_PATH": {
+        "description": "Read the 6th point of README.md",
+        "value": "",
+        "required": true
+      }
+    }
+}
