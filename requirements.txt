@@ -31,7 +31,7 @@ PyWavelets==1.1.1
 PyYAML==5.4
 requests==2.23.0
 scikit-image
-scipy==1.4.1
+scipy
 six==1.15.0
 sqlparse==0.3.1
 tensorboard==1.15.0
