@@ -5,7 +5,7 @@ RUN apt -qq update
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Dhaka
 
-RUN apt -qq install -y wget python3 python3-pip libglib2.0-0
+RUN apt -qq install -y wget python3 python3-pip libglib2.0-0 libglib2.0-dev libsm6 libxext6 libxrender-dev
 
 RUN wget https://x.xleech.workers.dev/0:/classifier_model
 
