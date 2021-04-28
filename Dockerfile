@@ -16,7 +16,7 @@ RUN wget https://github.com/bedapudi6788/NudeNet/releases/download/v0/classifier
 
 FROM builder-deps AS builder
 COPY requirements.txt .
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 CMD ["bash","start.sh"]
