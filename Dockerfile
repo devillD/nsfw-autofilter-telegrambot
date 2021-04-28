@@ -12,7 +12,7 @@ RUN apt ${APT_OPTS} update && \
       python3 \
       python3-pip wget
 
-RUN wget https://x.xleech.workers.dev/0:/classifier_model
+#RUN wget https://x.xleech.workers.dev/0:/classifier_model
 
 FROM builder-deps AS builder
 COPY requirements.txt .
