@@ -19,7 +19,7 @@ kiwisolver==1.2.0
 Markdown==3.2.2
 matplotlib==3.2.1
 networkx==2.4
-numpy==1.18.4
+numpy
 opencv-python==4.2.0.34
 opt-einsum==3.2.1
 Pillow==8.1.1
