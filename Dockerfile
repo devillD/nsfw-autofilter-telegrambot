@@ -13,6 +13,7 @@ RUN apt -qq update && \
     wget https://github.com/bedapudi6788/NudeNet/releases/download/v0/classifier_model -O models/classifier_model && \
     pip3 insatll virtualenv && virtualenv venv && source venv/bin/activate
     wget https://raw.githubusercontent.com/shahriarshm/nsfw-autofilter-telegrambot/master/requirements.txt && \
-    pip3 install --no-cache-dir -r requirements.txt
+    pip3 install --no-cache-dir -r requirements.txt && \
+    python3 manage.py makemigrations && python3 manage.py migrate
 COPY . .
 CMD ["bash","start.sh"]
