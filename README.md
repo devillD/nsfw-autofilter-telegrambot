@@ -1,4 +1,4 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/devillD/nsfw-autofilter-telegrambot.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/devillD/nsfw-autofilter-telegrambot)
 
 
 # NSFW Auto Filter [Telegram Bot](https://core.telegram.org/bots) by [Django](https://www.djangoproject.com/) and [Keras](https://keras.io/)
