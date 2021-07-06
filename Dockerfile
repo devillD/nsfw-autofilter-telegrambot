@@ -8,8 +8,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Dhaka
 RUN apt -qq update && \
     apt -qq install -y wget python3 python3-pip libglib2.0-0 \
-                       libglib2.0-dev libsm6 libxext6 libxrender-dev && \
-    mkdir models && \
+                       libglib2.0-dev libsm6 libxext6 libxrender-dev
+RUN mkdir models && \
     wget https://github.com/bedapudi6788/NudeNet/releases/download/v0/classifier_model -O models/classifier_model && \
     pip3 insatll virtualenv && virtualenv venv && source venv/bin/activate
     wget https://raw.githubusercontent.com/shahriarshm/nsfw-autofilter-telegrambot/master/requirements.txt && \
