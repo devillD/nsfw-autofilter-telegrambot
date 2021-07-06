@@ -27,11 +27,6 @@
         "description": "Your bot's name",
         "value": "",
         "required": true
-      },
-      "MODEL_PATH": {
-        "description": "Read the 6th point of README.md",
-        "value": "",
-        "required": true
       }
     }
 }
