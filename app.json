@@ -11,7 +11,7 @@
     "repository": "https://github.com/devillD/nsfw-autofilter-telegrambot.git",
     "website": "https://t.me/antinudebot",
     "success_url": "https://t.me/antinudebot",
-    "stack": "docker",
+    "stack": "container",
     "env": {
       "BOT_TOKEN": {
         "description": "The telegram bot token that you get from @BotFather.",
