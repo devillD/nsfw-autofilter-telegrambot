@@ -4,6 +4,7 @@ RUN mkdir /BOT
 RUN chmod 777 /BOT
 WORKDIR /BOT
 
+ENV DISABLE_COLLECTSTATIC=1
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Dhaka
 RUN apt -qq update
