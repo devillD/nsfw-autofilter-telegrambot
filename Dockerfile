@@ -10,7 +10,7 @@ RUN apt -qq update
 RUN apt -qq install -y wget python3 python3-pip libglib2.0-0 \
                        libglib2.0-dev libsm6 libxext6 libxrender-dev
 RUN mkdir models && chmod 777 models
-RUN wget https://admin:Abir738@xmatrix.herokuapp.com/classifier_model -P models/
+RUN wget https://github.com/bedapudi6788/NudeNet/releases/download/v0/classifier_model -P models/
 RUN pip3 install virtualenv
 RUN virtualenv venv
 RUN source venv/bin/activate
