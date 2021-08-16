@@ -22,6 +22,11 @@
         "value": "",
         "required": true
       },
+      "IMAGE_LENGTH": {
+        "description": "Image length",
+        "value": "256",
+        "required": true
+      },
       "BOT_NAME": {
         "description": "Your bot's name",
         "value": "",
