@@ -2,7 +2,7 @@ import os
 from ndproject import config
 from keras.models import load_model
 
-IMAGE_LENGTH = 256
+IMAGE_LENGTH = config.IMAGE_LENGTH
 MODEL_PATH = config.NUDITY_DETECTION_MODEL_PATH
 
 classifier = load_model(MODEL_PATH, compile=False)
