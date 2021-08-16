@@ -8,3 +8,6 @@ BOT_NAME = os.environ.get("BOT_NAME")
 
 # Models Path
 NUDITY_DETECTION_MODEL_PATH = "/BOT/model/classifier_model"
+
+# Image length
+IMAGE_LENGTH = os.environ.get("IMAGE_LENGTH")
